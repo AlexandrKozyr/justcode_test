@@ -1,0 +1,9 @@
+all:
+  propel:
+    class: sfPropelDatabase
+    param:
+      dsn:        mysql:dbname=jc_test;host=localhost
+      username:   root
+      password:   
+      encoding: utf8
+

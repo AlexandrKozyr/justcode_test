@@ -1,0 +1,9 @@
+all:
+  doctrine:
+    class: sfPropelDatabase
+    param:
+      dsn:        mysql:dbname=project;host=localhost
+      username:   root
+      password:
+      encoding: utf8
+

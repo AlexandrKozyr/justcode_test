@@ -1,0 +1,40 @@
+propel:
+  _attributes:
+    package: lib.model
+    defaultIdMethod: native
+  photo:
+    _attributes: { phpName: Photo }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    title: { phpName: Title, type: VARCHAR, size: '255', required: false }
+    content: { phpName: Content, type: BLOB, required: true }
+  product:
+    _attributes: { phpName: Product }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    title: { phpName: Title, type: VARCHAR, size: '255', required: true }
+    description: { phpName: Description, type: CLOB, required: false }
+  product_category:
+    _attributes: { phpName: ProductCategory }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true }
+    parent_id: { phpName: ParentId, type: INTEGER, size: '11', required: false, foreignTable: product_category, foreignReference: id, onDelete: RESTRICT, onUpdate: CASCADE }
+    title: { phpName: Title, type: VARCHAR, size: '255', required: true }
+    _indexes: { product_category_ibfk_1: [parent_id] }
+  product_has_photo:
+    _attributes: { phpName: ProductHasPhoto }
+    product_id: { phpName: ProductId, type: INTEGER, size: '11', primaryKey: true, required: true, foreignTable: product, foreignReference: id, onDelete: RESTRICT, onUpdate: CASCADE }
+    photo_id: { phpName: PhotoId, type: INTEGER, size: '11', primaryKey: true, required: true, foreignTable: photo, foreignReference: id, onDelete: RESTRICT, onUpdate: CASCADE }
+    _indexes: { fk_product_has_photo_photo1_idx: [photo_id], fk_product_has_photo_product1_idx: [product_id] }
+  product_has_product_category:
+    _attributes: { phpName: ProductHasProductCategory }
+    product_id: { phpName: ProductId, type: INTEGER, size: '11', primaryKey: true, required: true, foreignTable: product, foreignReference: id, onDelete: RESTRICT, onUpdate: CASCADE }
+    product_category_id: { phpName: ProductCategoryId, type: INTEGER, size: '11', primaryKey: true, required: true, foreignTable: product_category, foreignReference: id, onDelete: RESTRICT, onUpdate: CASCADE }
+    _indexes: { fk_product_has_product_category_product_category1_idx: [product_category_id], fk_product_has_product_category_product_idx: [product_id] }
+  product_has_sale:
+    _attributes: { phpName: ProductHasSale }
+    product_id: { phpName: ProductId, type: INTEGER, size: '11', primaryKey: true, required: true, foreignTable: product, foreignReference: id, onDelete: RESTRICT, onUpdate: CASCADE }
+    sale_id: { phpName: SaleId, type: INTEGER, size: '11', primaryKey: true, required: true, foreignTable: sale, foreignReference: id, onDelete: RESTRICT, onUpdate: CASCADE }
+    _indexes: { sale_id: [sale_id] }
+  sale:
+    _attributes: { phpName: Sale }
+    id: { phpName: Id, type: INTEGER, size: '11', primaryKey: true, autoIncrement: true, required: true, index: unique }
+    title: { phpName: Title, type: VARCHAR, size: '255', required: true, index: unique }
+    content: { phpName: Content, type: VARCHAR, size: '255', required: false }

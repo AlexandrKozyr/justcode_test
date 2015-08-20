@@ -1,0 +1,87 @@
+Options +FollowSymLinks +ExecCGI
+
+AddDefaultCharset UTF-8
+
+SetEnvIfNoCase User-Agent "^Yandex" search_bot
+SetEnvIfNoCase User-Agent "^Yahoo" search_bot
+SetEnvIfNoCase User-Agent "^Googlebot" search_bot
+SetEnvIfNoCase User-Agent "^Aport" search_bot
+SetEnvIfNoCase User-Agent "^msnbot" search_bot
+SetEnvIfNoCase User-Agent "^spider" search_bot
+SetEnvIfNoCase User-Agent "^Robot" search_bot
+SetEnvIfNoCase User-Agent "^php" search_bot
+SetEnvIfNoCase User-Agent "^Mail" search_bot
+SetEnvIfNoCase User-Agent "^bot" search_bot
+SetEnvIfNoCase User-Agent "^igdeSpyder" search_bot
+SetEnvIfNoCase User-Agent "^Snapbot" search_bot
+SetEnvIfNoCase User-Agent "^WordPress" search_bot
+SetEnvIfNoCase User-Agent "^BlogPulseLive" search_bot
+SetEnvIfNoCase User-Agent "^Parser" search_bot
+
+<FilesMatch "^.*dev.php$">
+    Order Allow,Deny
+    Allow from all
+    Deny from env=search_bot
+</FilesMatch>
+
+# special MIME type for icons - see http://www.iana.org/assignments/media-types/image/vnd.microsoft.icon
+AddType image/vnd.microsoft.icon .ico
+
+# cache images, css, js on cliend side
+
+#<IfModule mod_expires.c>
+#    ExpiresActive On
+#    ExpiresByType application/javascript "access plus 1 year"
+#    ExpiresByType application/x-javascript "access plus 1 year"
+#    ExpiresByType application/x-shockwave-flash "access plus 1 year"
+#    ExpiresByType text/javascript "access plus 1 year"
+#    ExpiresByType text/css "access plus 1 year"
+#    ExpiresByType image/jpg "access plus 1 year"
+#    ExpiresByType image/jpeg "access plus 1 year"
+#    ExpiresByType image/png "access plus 1 year"
+#    ExpiresByType image/gif "access plus 1 year"
+#    ExpiresByType image/x-icon "access plus 1 year"
+
+    # now we have icon MIME type, we can use it
+ #   ExpiresByType image/vnd.microsoft.icon "access plus 1 year"
+ #   ExpiresByType image/ico "access plus 1 month"
+#</IfModule>
+
+# gzip text elements
+#<IfModule mod_deflate.c>
+#    AddOutputFilterByType DEFLATE text/html application/xhtml+xml text/plain text/xml text/css text/javascript application/x-javascript application/javascript
+#
+#    BrowserMatch ^Mozilla/4 gzip-only-text/html
+#    BrowserMatch ^Mozilla/4\.0[678] no-gzip
+#    BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+
+#    <IfModule mod_header.c>
+#        Header append Vary User-Agent env=!dont-vary
+#    </IfModule>
+#</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteBase /
+
+  RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+  RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+  # sitemap
+  #RewriteRule ^bend/(.*)$        bend/$1 [L]
+  RewriteRule ^sitemap(.*)\.xml$    sitemaps/$1.xml [L]
+
+  # admin
+  RewriteRule ^(.*)sitecontrol$ /$1sitecontrol/ [R,L]
+  RewriteCond %{REQUEST_URI} ^/sitecontrol/?
+  RewriteRule ^(.*)$ bend_dev.php [QSA,L]
+
+  RewriteRule ^(.*)/$ /$1 [R=301,L]
+
+  RewriteRule ^error_log$  / [R=301,L]
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+
+  RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>

@@ -1,0 +1,101 @@
+Aug 20 22:51:42 symfony [info] {sfPatternRouting} Match route "product" (/product/:id) for /product/5 with parameters array (  'module' => 'default',  'action' => 'product',  'id' => '5',)
+Aug 20 22:51:42 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 20 22:51:42 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 20 22:51:42 symfony [info] {defaultActions} Call "defaultActions->executeProduct()"
+Aug 20 22:52:40 symfony [info] {sfPatternRouting} Match route "product" (/product/:id) for /product/5 with parameters array (  'module' => 'default',  'action' => 'product',  'id' => '5',)
+Aug 20 22:52:40 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 20 22:52:40 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 20 22:52:40 symfony [info] {defaultActions} Call "defaultActions->executeProduct()"
+Aug 20 22:52:40 symfony [notice] {sfWebDebugLogger}  Notice at E:\loc_site\justcode\sources\apps\frontend\modules\default\actions\actions.class.php on line 37 (Undefined variable: productId)
+Aug 20 22:53:27 symfony [info] {sfPatternRouting} Match route "product" (/product/:id) for /product/5 with parameters array (  'module' => 'default',  'action' => 'product',  'id' => '5',)
+Aug 20 22:53:27 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 20 22:53:27 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 20 22:53:27 symfony [info] {defaultActions} Call "defaultActions->executeProduct()"
+Aug 20 22:53:27 symfony [notice] {sfWebDebugLogger}  Notice at E:\loc_site\justcode\sources\apps\frontend\modules\default\actions\actions.class.php on line 37 (Undefined variable: productId)
+Aug 20 22:54:04 symfony [info] {sfPatternRouting} Match route "product" (/product/:id) for /product/5 with parameters array (  'module' => 'default',  'action' => 'product',  'id' => '5',)
+Aug 20 22:54:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 20 22:54:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 20 22:54:04 symfony [info] {defaultActions} Call "defaultActions->executeProduct()"
+Aug 20 22:54:28 symfony [info] {sfPatternRouting} Match route "product" (/product/:id) for /product/5 with parameters array (  'module' => 'default',  'action' => 'product',  'id' => '5',)
+Aug 20 22:54:28 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 20 22:54:28 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 20 22:54:28 symfony [info] {defaultActions} Call "defaultActions->executeProduct()"
+Aug 20 23:04:50 symfony [info] {sfPatternRouting} Match route "product" (/product/:id) for /product/5 with parameters array (  'module' => 'default',  'action' => 'product',  'id' => '5',)
+Aug 20 23:04:50 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 20 23:04:50 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 20 23:04:50 symfony [info] {defaultActions} Call "defaultActions->executeProduct()"
+Aug 20 23:11:51 symfony [info] {sfPatternRouting} Match route "product" (/product/:id) for /product/5 with parameters array (  'module' => 'default',  'action' => 'product',  'id' => '5',)
+Aug 20 23:11:51 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 20 23:11:51 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 20 23:11:51 symfony [info] {defaultActions} Call "defaultActions->executeProduct()"
+Aug 20 23:11:51 symfony [warning] {sfWebDebugLogger}  Warning at E:\loc_site\justcode\sources\lib\model\om\BaseProductHasProductCategoryPeer.php on line 1380 (Missing argument 2 for BaseProductHasProductCategoryPeer::retrieveByPK(), called in E:\loc_site\justcode\sources\lib\model\ProductPeer.php on line 37 and defined)
+Aug 20 23:11:51 symfony [notice] {sfWebDebugLogger}  Notice at E:\loc_site\justcode\sources\lib\model\om\BaseProductHasProductCategoryPeer.php on line 1381 (Undefined variable: product_category_id)
+Aug 20 23:11:51 symfony [notice] {sfWebDebugLogger}  Notice at E:\loc_site\justcode\sources\lib\model\om\BaseProductHasProductCategoryPeer.php on line 1391 (Undefined variable: product_category_id)
+Aug 20 23:25:19 symfony [info] {sfPatternRouting} Match route "product" (/product/:id) for /product/5 with parameters array (  'module' => 'default',  'action' => 'product',  'id' => '5',)
+Aug 20 23:25:19 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 20 23:25:19 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 20 23:25:19 symfony [info] {defaultActions} Call "defaultActions->executeProduct()"
+Aug 20 23:26:26 symfony [info] {sfPatternRouting} Match route "product" (/product/:id) for /product/5 with parameters array (  'module' => 'default',  'action' => 'product',  'id' => '5',)
+Aug 20 23:26:26 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 20 23:26:26 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 20 23:26:26 symfony [info] {defaultActions} Call "defaultActions->executeProduct()"
+Aug 20 23:27:07 symfony [info] {sfPatternRouting} Match route "product" (/product/:id) for /product/5 with parameters array (  'module' => 'default',  'action' => 'product',  'id' => '5',)
+Aug 20 23:27:07 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 20 23:27:07 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 20 23:27:07 symfony [info] {defaultActions} Call "defaultActions->executeProduct()"
+Aug 20 23:41:43 symfony [info] {sfPatternRouting} Match route "product" (/product/:id) for /product/5 with parameters array (  'module' => 'default',  'action' => 'product',  'id' => '5',)
+Aug 20 23:41:43 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 20 23:41:43 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 20 23:41:43 symfony [info] {defaultActions} Call "defaultActions->executeProduct()"
+Aug 20 23:43:04 symfony [info] {sfPatternRouting} Match route "product" (/product/:id) for /product/5 with parameters array (  'module' => 'default',  'action' => 'product',  'id' => '5',)
+Aug 20 23:43:04 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 20 23:43:04 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 20 23:43:04 symfony [info] {defaultActions} Call "defaultActions->executeProduct()"
+Aug 20 23:43:06 symfony [info] {sfPatternRouting} Match route "product" (/product/:id) for /product/5 with parameters array (  'module' => 'default',  'action' => 'product',  'id' => '5',)
+Aug 20 23:43:06 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 20 23:43:06 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 20 23:43:06 symfony [info] {defaultActions} Call "defaultActions->executeProduct()"
+Aug 20 23:43:17 symfony [info] {sfPatternRouting} Match route "product" (/product/:id) for /product/5 with parameters array (  'module' => 'default',  'action' => 'product',  'id' => '5',)
+Aug 20 23:43:17 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 20 23:43:17 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 20 23:43:17 symfony [info] {defaultActions} Call "defaultActions->executeProduct()"
+Aug 20 23:43:17 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 20 23:43:17 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Aug 20 23:43:17 symfony [info] {sfWebDebugLogger} Configuration 21.34 ms (8)
+Aug 20 23:43:17 symfony [info] {sfWebDebugLogger} Factories 94.52 ms (1)
+Aug 20 23:43:17 symfony [info] {sfWebDebugLogger} Action "default/product" 64.38 ms (1)
+Aug 20 23:43:17 symfony [info] {sfWebDebugLogger} View "None" for "default/product" 0.02 ms (1)
+Aug 20 23:43:17 symfony [info] {sfWebResponse} Send content (214 o)
+Aug 20 23:43:53 symfony [info] {sfPatternRouting} Match route "product" (/product/:id) for /product/5 with parameters array (  'module' => 'default',  'action' => 'product',  'id' => '5',)
+Aug 20 23:43:53 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 20 23:43:53 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 20 23:43:53 symfony [info] {defaultActions} Call "defaultActions->executeProduct()"
+Aug 20 23:43:54 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 20 23:43:54 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Aug 20 23:43:54 symfony [info] {sfWebDebugLogger} Configuration 35.88 ms (8)
+Aug 20 23:43:54 symfony [info] {sfWebDebugLogger} Factories 81.43 ms (1)
+Aug 20 23:43:54 symfony [info] {sfWebDebugLogger} Action "default/product" 71.74 ms (1)
+Aug 20 23:43:54 symfony [info] {sfWebDebugLogger} View "None" for "default/product" 0.02 ms (1)
+Aug 20 23:43:54 symfony [info] {sfWebResponse} Send content (214 o)
+Aug 20 23:43:59 symfony [info] {sfPatternRouting} Match route "product" (/product/:id) for /product/6 with parameters array (  'module' => 'default',  'action' => 'product',  'id' => '6',)
+Aug 20 23:43:59 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 20 23:43:59 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 20 23:43:59 symfony [info] {defaultActions} Call "defaultActions->executeProduct()"
+Aug 20 23:43:59 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 20 23:43:59 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Aug 20 23:43:59 symfony [info] {sfWebDebugLogger} Configuration 40.69 ms (8)
+Aug 20 23:43:59 symfony [info] {sfWebDebugLogger} Factories 157.93 ms (1)
+Aug 20 23:43:59 symfony [info] {sfWebDebugLogger} Action "default/product" 29.79 ms (1)
+Aug 20 23:43:59 symfony [info] {sfWebDebugLogger} View "None" for "default/product" 0.02 ms (1)
+Aug 20 23:43:59 symfony [info] {sfWebResponse} Send content (2 o)
+Aug 20 23:44:01 symfony [info] {sfPatternRouting} Match route "product" (/product/:id) for /product/5 with parameters array (  'module' => 'default',  'action' => 'product',  'id' => '5',)
+Aug 20 23:44:01 symfony [info] {sfFilterChain} Executing filter "sfRenderingFilter"
+Aug 20 23:44:01 symfony [info] {sfFilterChain} Executing filter "sfExecutionFilter"
+Aug 20 23:44:01 symfony [info] {defaultActions} Call "defaultActions->executeProduct()"
+Aug 20 23:44:02 symfony [info] {sfWebResponse} Send status "HTTP/1.1 200 OK"
+Aug 20 23:44:02 symfony [info] {sfWebResponse} Send header "Content-Type: application/json"
+Aug 20 23:44:02 symfony [info] {sfWebDebugLogger} Configuration 27.79 ms (8)
+Aug 20 23:44:02 symfony [info] {sfWebDebugLogger} Factories 76.99 ms (1)
+Aug 20 23:44:02 symfony [info] {sfWebDebugLogger} Action "default/product" 71.00 ms (1)
+Aug 20 23:44:02 symfony [info] {sfWebDebugLogger} View "None" for "default/product" 0.02 ms (1)
+Aug 20 23:44:02 symfony [info] {sfWebResponse} Send content (214 o)
